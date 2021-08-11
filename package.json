@@ -10,6 +10,7 @@
         "@dynatrace/oneagent-sdk": "^1.4.1",
         "@sap/cds": "^5",
         "@sap/hana-client": "^2.6.61",
+        "axios": "^0.21.1",
         "express": "^4"
     },
     "devDependencies": {
