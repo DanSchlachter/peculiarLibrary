@@ -22,9 +22,10 @@ modules:
  # ------------------------------------------------------------
    type: nodejs
    path: gen/srv
+   parameters:
+     commands: cds run
    properties:
      DT_INJECTION_RULES: ::INCLUDE:ENDS,NODEJS_APP_BASE_DIR,/node_modules/npm
-     
    requires:
     # Resources extracted from CAP configuration
     - name: peculiarLibrary-db

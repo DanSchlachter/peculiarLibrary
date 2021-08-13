@@ -6,14 +6,16 @@
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "@dynatrace/oneagent": "^1.219.134-1.0.0",
-        "@dynatrace/oneagent-sdk": "^1.4.1",
+        "@dynatrace/oneagent-sdk": "1.2",
         "@sap/cds": "^5",
         "@sap/hana-client": "^2.6.61",
         "express": "^4"
     },
     "devDependencies": {
         "sqlite3": "^5.0.2"
+    },
+    "engines": {
+        "node": "^14"
     },
     "scripts": {
         "start": "cds run"
@@ -44,7 +46,6 @@
         }
     },
     "cds": {
-        "DT_INJECTION_RULES": "::INCLUDE:ENDS,NODEJS_APP_BASE_DIR,/node_modules/npm",
         "requires": {
             "db": {
                 "kind": "sql"
